@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+}
