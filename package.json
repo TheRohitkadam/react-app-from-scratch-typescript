@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server ./src"
+    "start": "webpack-dev-server ./src",
+    "build": "webpack"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -13,7 +14,7 @@
   "devDependencies": {
     "@babel/core": "^7.22.1",
     "@babel/plugin-syntax-typescript": "^7.21.4",
-    "@babel/preset-env": "^7.22.2",
+    "@babel/preset-env": "^7.22.5",
     "@babel/preset-react": "^7.22.3",
     "@babel/preset-typescript": "^7.21.5",
     "@types/react": "^18.2.7",
