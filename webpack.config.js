@@ -13,26 +13,20 @@ module.exports = {
       {
         test: /\.(js|jsx|ts|tsx)$/,
         exclude: "/node_modules/",
-        // use: "babel-loader",
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env", "@babel/preset-typescript"],
+            configFile: "./babel.config.js",
           },
         },
       },
-      // {
-      //   test: /\.(ts|tsx)$/,
-      //   exclude: /node_modules/,
-      //   use: "ts-loader",
-      // },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|jpe?g|gif|svg|woff2?|eot|ttf|otf)$/,
-        use: "asset/resource",
+        type: "asset/resource",
       },
     ],
   },
